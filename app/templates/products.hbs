@@ -1,7 +1,5 @@
-{{#link-to "products.new"}} Dodaj produkt {{/link-to}}
+{{#link-to "new"}} Dodaj produkt {{/link-to}}
 
 <div>
-    {{#each model as |product|}} {{#link-to "products.edit" product}}
-    <p>{{product.id}}</p>
-    {{/link-to}} {{/each}}
+    {{#each model as |product|}} {{products-list product=product}} {{#link-to "products.edit" product}} Edit {{/link-to}} {{/each}}
 </div>
