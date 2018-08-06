@@ -9,11 +9,13 @@
             </button>
             {{#link-to 'index' class="navbar-brand"}}Storage App{{/link-to}}
         </div>
-
         <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="nav navbar-nav">
-                {{#link-to 'index' tagName="li"}}
-                <a href="">Home</a>{{/link-to}}
+                {{#link-to 'products' tagName="li"}}
+                <a href="">Show products</a>
+                {{/link-to}} {{#link-to 'new' tagName="li"}}
+                <a href="">Add product</a>
+                {{/link-to}}
             </ul>
         </div>
         <!-- /.navbar-collapse -->
