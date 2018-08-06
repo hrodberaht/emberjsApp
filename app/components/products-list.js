@@ -6,6 +6,7 @@ export default Component.extend({
     edit() {
       this.set("editing", true);
       console.log(this.get("editing"));
+      console.log(this.get(model));
     },
     cancle() {
       this.set("editing", false);
