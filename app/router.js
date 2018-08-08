@@ -8,14 +8,14 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route("products", function() {
-    this.route("index", { path: "products/index" });
-    this.route("new", { path: "products/new" });
+    this.route("index", { path: "/" });
+    this.route("new");
   });
 
   this.route("contact");
-  this.route('documents', function() {
-    this.route('invoices');
-    this.route('new');
+  this.route("documents", function() {
+    this.route("invoices");
+    this.route("new");
   });
 });
 
