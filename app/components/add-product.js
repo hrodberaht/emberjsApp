@@ -2,16 +2,18 @@ import Component from "@ember/component";
 
 export default Component.extend({
   product: {},
-  value: "",
 
   actions: {
     addProduct() {
-      console.log(this.get("store"));
       let newProduct = this.get("store").createRecord("product", {
-        name: "Acer"
+        name: this.get("product.name"),
+        ean: this.get("product.ean"),
+        price: this.get("product.price")
       });
       newProduct.save();
-      this.get("onSubmit")(this.get("product"));
+      this.set("product.name", "");
+      this.set("product.ean", "");
+      this.set("product.price", "");
     }
   }
 });
