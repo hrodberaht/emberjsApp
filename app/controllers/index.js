@@ -15,6 +15,7 @@ export default Controller.extend({
         `Thank you for your email address: ${this.get("emailAddress")}.`
       );
       this.set("emailAddress", "");
+      console.log(this.store.findAll("product"));
     }
   }
 });

@@ -1,8 +1,8 @@
 {{#if editing}}
 <article>
     <h3>{{input value=product.name}}</h3>
-    <p>Id: {{input value=product.id}}</p>
-    <p>Ean: {{input value=product.EAN}}</p>
+    <p>Id: {{product.id}}</p>
+    <p>Ean: {{input value=product.ean}}</p>
     <p>Price: {{input value=product.price}}</p>
     <button {{action 'cancle'}}>Cancle</button>
     <button {{action 'save'}}>Save</button>
@@ -11,7 +11,7 @@
 <article>
     <h3>{{product.name}}</h3>
     <p>Id: {{product.id}}</p>
-    <p>Ean: {{product.EAN}}</p>
+    <p>Ean: {{product.ean}}</p>
     <p>Price: {{product.price}}</p>
     <button {{action 'edit'}}>Edit</button>
 </article>
