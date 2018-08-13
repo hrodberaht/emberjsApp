@@ -13,6 +13,7 @@ Router.map(function() {
   });
 
   this.route("contact");
+
   this.route("documents", function() {
     this.route("invoices");
     this.route("new");
