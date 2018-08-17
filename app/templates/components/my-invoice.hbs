@@ -1,2 +1,7 @@
 <p>{{invoice.number}}</p>
-<button>Details</button>
+
+{{#if showDetails}} Products
+<button {{ action "onDetails"}}>Close</button>
+{{else}}
+<button {{ action "onDetails"}}>Details</button>
+{{/if}}
